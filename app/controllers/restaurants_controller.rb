@@ -5,13 +5,13 @@ class RestaurantsController < ApplicationController
   end
 
   def show
-    restaurant = Restaurant.find(params[:id])
+    restaurant = Restaurant.find(params[:id]).order(rating: :desc)
     if restaurant
       render json: {
         id: restaurant.id,
         name: restaurant.name,
         address: restaurant.address
-      }
+      }, include: [pizzas: { only: %i[id name ingredients] } ]
     else
       render json: { error: 'Restaurant not found' }, status: :not_found
     end

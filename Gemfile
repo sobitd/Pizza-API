@@ -34,6 +34,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'bootsnap', require: false
 gem 'faker'
 gem 'rename'
+gem 'active_model_serializers'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
