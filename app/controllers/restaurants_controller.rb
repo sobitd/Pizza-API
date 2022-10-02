@@ -1,11 +1,11 @@
 class RestaurantsController < ApplicationController
   def index
     restaurants = Restaurant.all
-    render json: restaurants
+    render json: restaurants, only: %i[id name address]
   end
 
   def show
-    restaurant = Restaurant.find(params[:id])
+    restaurant = Restaurant.find_by(id: params[:id])
     if restaurant
       render json: restaurant
     else
@@ -14,7 +14,7 @@ class RestaurantsController < ApplicationController
   end
 
   def destroy
-    restaurant = Restaurant.find(params[:id])
+    restaurant = Restaurant.find_by(id: params[:id])
     if restaurant
       restaurant.destroy
       head :no_content
