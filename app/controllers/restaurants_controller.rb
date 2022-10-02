@@ -1,17 +1,14 @@
 class RestaurantsController < ApplicationController
   def index
-    restaurants = Restaurant.all
-    render json: restaurants, only: %i[id name address]
+    restaurants = Restaurant.all.order(rating: :desc)
+    render json: restaurants, include:
+    [pizzas: { only: %i[id name ingredients] }]
   end
 
   def show
-    restaurant = Restaurant.find(params[:id]).order(rating: :desc)
+    restaurant = Restaurant.find(params[:id])
     if restaurant
-      render json: {
-        id: restaurant.id,
-        name: restaurant.name,
-        address: restaurant.address
-      }, include: [pizzas: { only: %i[id name ingredients] } ]
+      render json: restaurant
     else
       render json: { error: 'Restaurant not found' }, status: :not_found
     end
