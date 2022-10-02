@@ -1,8 +1,7 @@
 class RestaurantsController < ApplicationController
   def index
-    restaurants = Restaurant.all.order(rating: :desc)
-    render json: restaurants, include:
-    [pizzas: { only: %i[id name ingredients] }]
+    restaurants = Restaurant.all
+    render json: restaurants
   end
 
   def show
