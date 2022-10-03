@@ -1,7 +1,7 @@
 class RestaurantsController < ApplicationController
   def index
     restaurants = Restaurant.all
-    render json: restaurants, only: %i[id name address]
+    render json: restaurants
   end
 
   def show
