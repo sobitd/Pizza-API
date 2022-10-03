@@ -11,7 +11,7 @@ class RestaurantsController < ApplicationController
     else
       render json: { error: 'Restaurant not found' }, status: :not_found
     end
-  end
+  end 
 
   def destroy
     restaurant = Restaurant.find_by(id: params[:id])
