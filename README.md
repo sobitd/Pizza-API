@@ -37,12 +37,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is an API for tracking pizzas restaurants built on Ruby on Rails.
+This is a RESTful API for tracking pizzas restaurants built with Ruby on Rails.In this project, users can consume the API to look for restaurants with the best pizza offerings at pocket friendly prices.
 
-@@ -112,7 +113,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
-[![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![Ruby on Rails][https://rubyonrails.org]][RubyonRails-url]
-* [![Ruby][https://www.ruby-lang.org]][Ruby-url]
+ ### The project was built with:
+ * Ruby v2.7.4
+ * Ruby on Rails v7.0.4
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
