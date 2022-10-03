@@ -39,15 +39,10 @@
 
 This is an API for tracking pizzas restaurants built on Ruby on Rails.
 
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 @@ -112,7 +113,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+[![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![Ruby on Rails][https://rubyonrails.org]][RubyonRails-url]
+* [![Ruby][https://www.ruby-lang.org]][Ruby-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
