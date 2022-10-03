@@ -1,5 +1,4 @@
 
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/daniel-sobit/linkled]
 <br />
 <div align="center">
   <h3 align="center">Phase-4-Code-Challenge</h3>
