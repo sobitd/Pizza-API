@@ -1,6 +1,6 @@
 class PizzasController < ApplicationController
   def index
     pizzas = Pizza.all
-    render json: pizzas, only: %i[id name ingredients]
+    render json: pizzas, status: :ok
   end
 end
