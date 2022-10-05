@@ -17,7 +17,7 @@
 This is a RESTful API for tracking pizzas restaurants built with Ruby on Rails.In this project, users can consume the API to look for restaurants with the best pizza offerings at pocket friendly prices.
 
  ### The project was built with:
- * Ruby v2.7.4
+ * Ruby v3.1.4
  * Ruby on Rails v7.0.4
 
 <!-- GETTING STARTED -->
