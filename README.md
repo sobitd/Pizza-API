@@ -31,7 +31,7 @@ Rails: 7.0.4
 ## Setup
 ~~~bash
 $ git@github.com:sobitd/Phase-4-Code-Challenge-Pizzas.git
-$ cd pitsa
+$ cd Phase-4-Code-Challenge-Pizzas
 ~~~
 
 Install gems with:
