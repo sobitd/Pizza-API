@@ -36,6 +36,12 @@ gem 'faker'
 gem 'rename'
 gem 'active_model_serializers'
 
+
+group :production do
+       gem 'pg', '~> 1.4', '>= 1.4.3'
+       gem 'sinatra-contrib', '~> 2.2', '>= 2.2.2',require: false
+end
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
