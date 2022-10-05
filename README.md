@@ -39,7 +39,7 @@ Install gems with:
 bundle install
 ```
 Setup database with:
-> make sure you have sq3lite installed and running on your system
+> make sure you have postgresql installed and running on your system
 ```
    rails db:create
    rails db:migrate
